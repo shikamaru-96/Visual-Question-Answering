@@ -25,7 +25,7 @@ Details about the dataset are explained at the [VisualQA website](http://www.vis
 
 <img src="examples/model.png">
 
-##Performance
+## Performance
 
 The model gives a validation accuracy of 54.01% after 10 epochs keeping batch size=200.
 
