@@ -30,7 +30,7 @@ def preprocess_question(question):
 	seq = np.reshape(seq,(1,len(seq)))
 	return seq
 
-def generate_answer(img_path, question, model):
+def generate_answer(img_path, question):
 	with open('weights/model_architecture.json', 'r') as f:
     		model = model_from_json(f.read())
     	model.load_weights('weights/model_weights.h5')
@@ -50,7 +50,7 @@ def main():
 	parser.add_argument('-image', type=str, required=True)
 	parser.add_argument('-question', type=str, required=True)
 	args = parser.parse_args()
-	top_answers = generate_answer(args.image, args.question, args.model)
+	top_answers = generate_answer(args.image, args.question)
 	print('Top answers: %s, %s, %s.' % (top_answers[0],top_answers[1],top_answers[2]))
 
 if __name__ == '__main__':main()
