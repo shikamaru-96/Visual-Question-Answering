@@ -9,8 +9,7 @@ Details about the dataset are explained at the [VisualQA website](http://www.vis
 * Numpy
 * Scipy (for loading pre-computed MS COCO features)
 * NLTK (for tokenizer)
-* Keras
-* Theano
+* Keras(version used: 2.0.9)
 
 ## Training
 
@@ -25,10 +24,6 @@ Details about the dataset are explained at the [VisualQA website](http://www.vis
 
 <img src="examples/model.png">
 
-## Performance
-
-The model gives a validation accuracy of 54.01% after 10 epochs keeping batch size=200.
-
 
 ## Prediction
 
@@ -42,8 +37,4 @@ Here are some examples of predictions:
 
 | Image                                              | Question                   | Top Answers (left to right) |
 |----------------------------------------------------|----------------------------|-----------------------------|
-| <img src="examples/COCO_val2014_000000000136.jpg"> | Which animal is this?      | giraffe, cat, bear          |
-| <img src="examples/COCO_val2014_000000000073.jpg"> | Which vehicle is this?     | motorcycle, taxi, train     |
-| <img src="examples/COCO_val2014_000000000196.jpg"> | How many dishes are there? | 5, 3, 2                     |
-| <img src="examples/COCO_val2014_000000000283.jpg"> | What is in the bottle?     | water, beer, wine           |
-| <img src="examples/COCO_val2014_000000000357.jpg"> | Which sport is this?       | tennis, baseball, frisbee   |
+| <img src="examples/dog.jpeg"> 					 | Which animal is this?      | dog, cat, giraffe           |
