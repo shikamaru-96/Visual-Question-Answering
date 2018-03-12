@@ -19,10 +19,7 @@ Details about the dataset are explained at the [VisualQA website](http://www.vis
 
 * To train with a batch size of 200 for 20 epochs, we would use: `python train.py -batch_size=200 -num_epochs=20`.
 
-
-## Model (2-VIS+LSTM)
-
-<img src="examples/model.png">
+* If your device gives memory error then make swap space of 40GB and rerun the code.
 
 
 ## Prediction
@@ -31,10 +28,12 @@ Details about the dataset are explained at the [VisualQA website](http://www.vis
 
 * The options `-question` and `-image` are used to specify the question and address of the image respectively. 
 
-* An example of usage is: `python question_answer.py -image="examples/COCO_val2014_000000000136.jpg" -question="Which animal is this?"`
+* Run the script: `python question_answer.py -image="image path" -question="question text"`
+  An example of usage is: `python question_answer.py -image="tree.jpg" -question="How many trees are there?"`
 
 Here are some examples of predictions:
 
 | Image                                              | Question                   | Top Answers (left to right) |
 |----------------------------------------------------|----------------------------|-----------------------------|
-| <img src="examples/dog.jpeg"> 					 | Which animal is this?      | dog, cat, giraffe           |
+| <img src="examples/dog.jpeg"> 					           | Which animal is this?      | dog, cat, giraffe           |
+| <img src="examples/COCO_val2014_000000000073.jpg"> | Which vehicle is this?     | motorcycle, taxi, train     |

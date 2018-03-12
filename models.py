@@ -3,7 +3,7 @@ import embedding
 from keras.models import Sequential
 from keras.layers import Dense, Embedding, LSTM, Merge, Reshape, Dropout, Convolution2D, MaxPooling2D, ZeroPadding2D, Flatten
 from keras import backend as K
-K.set_image_dim_ordering('th')`
+K.set_image_dim_ordering('th')
 
 
 
