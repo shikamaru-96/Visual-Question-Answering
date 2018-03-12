@@ -22,14 +22,13 @@ Details about the dataset are explained at the [VisualQA website](http://www.vis
 * If your device gives memory error then make swap space of 40GB and rerun the code.
 
 
-## Prediction
+## Running the Model
 
-* Q&A can be performed on any image using the script `question_answer.py`.
+* Questions can be asked on any image using the script `question_answer.py`.
 
-* The options `-question` and `-image` are used to specify the question and address of the image respectively. 
+* Run the script: `python question_answer.py` 
 
-* Run the script: `python question_answer.py -image="image path" -question="question text"`
-  An example of usage is: `python question_answer.py -image="tree.jpg" -question="How many trees are there?"`
+* Enter the image address in image_path (Enter n in image_path to exit) and question  `
 
 Here are some examples of predictions:
 
